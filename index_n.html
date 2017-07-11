@@ -54,7 +54,7 @@
 			</div>
 			<div class="carouselClose" onclick="hideCarousel()"></div>
 		</div>
-		<div>
+		<div class="head">
 			<div class="navbar navbar-default navbar-fixed-top">
 				<div class="navbar-header">
 					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -65,33 +65,35 @@
 				</div>
 				<div class="navbar-collapse collapse" id="navbar-main">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">POČETNA</a></li>
+						<li class="active"><a href="index_n.html">STARTSEITE</a></li>
 						<li>
 							<div class="dropdown">
-								<button onclick="myFunction()" class="dropbtn">GARDEROBA</button>
+								<button onclick="myFunction()" class="dropbtn">KLEIDUNG</button>
 								<div id="myDropdown" class="dropdown-content">
-									<a href="haljine.html">haljine</a>
-									<a href="bluze.html">bluze</a>
-									<a href="suknje.html">suknje</a>
-									<a href="pantalone.html">pantalone</a>
-									<a href="teenie.html">tinejdžeri</a>
-									<a href="deca.html">deca</a>
+									<a href="haljine_n.html">Kleider</a>
+									<a href="bluze_n.html">Blusen</a>
+									<a href="suknje_n.html">Röcke</a>
+									<a href="pantalone_n.html">Hosen</a>
+									<a href="teenie_n.html">Jugendliche</a>
+									<a href="deca_n.html">Kinder</a>
 								</div>
 							</div>
 						</li>
-						<li><a href="fotografije_slika.html">SLIKE</a></li>
-						<li><a href="o_nama.html">O MENI</a></li>
-						<li><a href="kontakt.html">KONTAKT</a></li>
+						<li><a href="fotografije_slika_n.html">BILDER</a></li>
+						<li><a href="o_nama_n.html">ÜBER MICH</a></li>
+						<li><a href="kontakt_n.html">KONTAKT</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a class="flag" href="haljine.html">🇷🇸</a></li>
-						<li><a class="flag" href="haljine_e.html">🇬🇧</a></li>
-						<li><a class="flag" href="haljine_n.html">🇩🇪</a></li>
+						<li><a class="flag" href="index.html">🇷🇸</a></li>
+						<li><a class="flag" href="index_e.html">🇬🇧</a></li>
+						<li class="active"><a class="flag" href="index_n.html">🇩🇪</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="banner-cont">
 				<img src="images/DADA_logo.png" class="logo"></img>
+				<!-- <div class="logo"></div> -->
+				<img src="images/banner.jpg" class="banner"></img>
 			</div>
 		</div>
 
@@ -158,7 +160,59 @@
 				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('h17')">
 					<img src="images/h17/DSC-201.jpg" class="gallery-image"></img>
 				</div>
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('bip')">
+					<img src="images/bip/DSC-110.jpg" class="gallery-image"></img>
+				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('bis1')">
+					<img src="images/bis1/DSC-119.jpg" class="gallery-image"></img>
+				</div>
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('bis2')">
+					<img src="images/bis2/DSC-124.jpg" class="gallery-image"></img>
+				</div>
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('bis3')">
+					<img src="images/bis3/DSC-136.jpg" class="gallery-image"></img>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('bis4')">
+					<img src="images/bis4/DSC-163.jpg" class="gallery-image"></img>
+				</div>
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('bish1')">
+					<img src="images/bish1/DSC-171.jpg" class="gallery-image"></img>
+				</div>
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('bish2')">
+					<img src="images/bish2/DSC-177.jpg" class="gallery-image"></img>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('s1')">
+					<img src="images/s1/DSC-179.jpg" class="gallery-image"></img>
+				</div>
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('s2')">
+					<img src="images/s2/DSC-196.jpg" class="gallery-image"></img>
+				</div>
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('s3')">
+					<img src="images/s3/DSC-198.jpg" class="gallery-image"></img>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('teenie')">
+					<img src="images/teenie/DSC-209.jpg" class="gallery-image"></img>
+				</div>
+			</div>
+			<!-- <div class="row">
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel(1)">
+					<img src="images/DSC-1.jpg" class="gallery-image"></img>
+				</div>
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('nesto')">
+					<img src="images/DSC-2.jpg" class="gallery-image"></img>
+				</div>
+				<div class="col-md-4 gallery-item" style="z-index: 20" onClick="showCarousel('nesto')">
+					<img src="images/DSC-3.jpg" class="gallery-image"></img>
+				</div>
+			</div> -->
 		</div>
 		<script type="text/javascript" src="js/jsproba.js"></script>
 	</body>

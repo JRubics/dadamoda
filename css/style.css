@@ -129,9 +129,11 @@ body {
 	margin-top: 30px;
 }
 .gallery-image {
-	height: 100%;
+	/*height: 550px;*/
 	max-width: 100%;
 }
+
+
 @media(max-width: 1080px){
 	.banner {
 		max-width: 100%;
